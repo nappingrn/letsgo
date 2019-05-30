@@ -308,7 +308,7 @@ public class PowerStockController {
 		   {		   
 				   JSONParser parser = new JSONParser();
 				    
-				   	String UserUrl = "https://localhost:7070/users/" + username + "/index";	
+				   	String UserUrl = "https://rajj.herokuapp.com/users/" + username + "/portfolio";	
 					String stockData = Stock.sendGet(UserUrl);
 					JSONObject json = (JSONObject) parser.parse(stockData);
 		
