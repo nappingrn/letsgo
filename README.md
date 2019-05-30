@@ -50,3 +50,4 @@ GET:/portfolio/
 	- will take the movement, flucutation, highs & lows & shares to get grade for portfolio
 
 # letsgo
+# letsgo
