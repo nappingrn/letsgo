@@ -28,7 +28,7 @@ public class GenerateIndexReport {
 			   
 		  // Uncomment for running
 
-				   	String UserUrl = "https://localhost:7070/users/" + username + "/index";	
+				   	String UserUrl = "https://rajj.herokuapp.com/users/"+username+"/index";
 					String stockData = Stock.sendGet(stockUrl);
 					JSONParser parser = new JSONParser();
 					JSONObject json = (JSONObject) parser.parse(stockData);
