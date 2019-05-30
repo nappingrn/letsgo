@@ -11,8 +11,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 public class GenerateIndexReport {
 	public double GenerateReport(@PathVariable int timeframe, @PathVariable String username) {
 		   
-		   // Testing Purposes
-		   /******************************************/
+		   /*
 		   
 			   String Test = "{ \"index\" : ["
 			   		+ "{ \"stock\": \"AAPL\","
@@ -21,28 +20,24 @@ public class GenerateIndexReport {
 			   		+ "	\"amount\": 20}, "
 			   		+ "] }";
 			   
-			/******************************************/
+			*/
 		   
-		  // Generate Report Parser
-			   JSONParser reportParser = new JSONParser();
 		   
 		   
 			   try {
 			   
 		  // Uncomment for running
-				/******************************************/
-				    /*
+
 				   	String UserUrl = "https://localhost:7070/users/" + username + "/index";	
 					String stockData = Stock.sendGet(stockUrl);
 					JSONParser parser = new JSONParser();
 					JSONObject json = (JSONObject) parser.parse(stockData);
-					*/
-				 /******************************************/
+				 /* 
 			   
 		  // Testing Purpose
-				   /******************************************/
+				  
 				   JSONObject json = (JSONObject) reportParser.parse(Test); // replace this with above comment when production
-				   /******************************************/
+				  */
 				   
 		 //	 Get Index
 				   JSONArray details = (JSONArray) json.get("index");
