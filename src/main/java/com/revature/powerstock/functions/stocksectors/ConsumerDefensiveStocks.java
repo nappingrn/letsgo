@@ -31,7 +31,7 @@ public class ConsumerDefensiveStocks {
 					JSONParser stockParser = new JSONParser();
 				
 				// URL
-					String techURL = "https://cloud.iexapis.com/stable/stock/market/collection/sector?collectionName=Consumer%20Defensive&token=sk_77ef8dc8d96c43f7ae4624d7ea5b228e";	
+					String techURL = "https://cloud.iexapis.com/stable/stock/market/collection/sector?collectionName=Technology&token=sk_77ef8dc8d96c43f7ae4624d7ea5b228e";	
 				
 				// URL DATA -> String
 					String techDataString = Stock.sendGet(techURL);
