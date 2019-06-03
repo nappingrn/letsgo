@@ -1,38 +1,3 @@
-package com.revature.powerstock.functions.stocksectors;
-
-import java.util.ArrayList;
-import java.util.HashMap;
-
-import org.json.simple.JSONArray;
-import org.json.simple.JSONObject;
-import org.json.simple.parser.JSONParser;
-
-import com.project2.stockConsumerResources.Stock;
-
-public class HealthCareStocks {
-
-	// Create An ArrayList to Hold Stock Names
-				ArrayList<String> stockSymbols = new ArrayList<String>();
-				
-			// Create An ArrayList to Hold Stock Names
-				ArrayList<String> stockNames = new ArrayList<String>();
-				
-			// Create An ArrayList to Hold Stock Names
-				ArrayList<String> sector = new ArrayList<String>();
-				
-			// Create A HashMap
-				HashMap<String, String> sectorData = new HashMap<String, String>();
-			
-		public HashMap<String, String> getStocks() {
-			// Technology
-			try {
-				
-				// JSON Parser
-					JSONParser stockParser = new JSONParser();
-				
-				// URL
-					String techURL = "package com.revature.powerstock.functions.stocksectors";
-
 import java.util.ArrayList;
 import java.util.HashMap;
 
