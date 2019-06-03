@@ -41,17 +41,17 @@ public class PowerStockController {
 			
 			System.out.println("Technology Stocks");
 		
-		// Gather Consumer Defensive Stock Data
-			ConsumerDefensiveStocks conDefStockData = new ConsumerDefensiveStocks();
-			sectors.put("Consumer Defensive", conDefStockData.getStocks());
+// 		// Gather Consumer Defensive Stock Data
+// 			ConsumerDefensiveStocks conDefStockData = new ConsumerDefensiveStocks();
+// 			sectors.put("Consumer Defensive", conDefStockData.getStocks());
 				
-			System.out.println("Consumber Defensive Stocks");
+// 			System.out.println("Consumber Defensive Stocks");
 		
-		// Gather HealthCare Stock Data
-			HealthCareStocks healthStockData = new HealthCareStocks();
-			sectors.put("Health Care", healthStockData.getStocks());
+// 		// Gather HealthCare Stock Data
+// 			HealthCareStocks healthStockData = new HealthCareStocks();
+// 			sectors.put("Health Care", healthStockData.getStocks());
 					
-			System.out.println("HealthCare Stocks");
+// 			System.out.println("HealthCare Stocks");
 		
 		return sectors;
 
@@ -246,7 +246,7 @@ public class PowerStockController {
 				sectorComparison.trim();
 				sectorComparison = sectorComparison.replaceAll("\\s", "%20");
 	
-				String stockUrl2 = "https://api.iextrading.com/1.0/stock/market/collection/sector?collectionName="+sectorComparison;	
+				String stockUrl2 = "https://cloud.iexapis.com/stable/stock/market/collection/sector?collectionName=" + sectorComparison + "&token=sk_77ef8dc8d96c43f7ae4624d7ea5b228e";	
 				String stockData2 = Stock.sendGet(stockUrl2);
 				JSONParser parser2 = new JSONParser();
 				JSONArray stockJson2 = (JSONArray) parser2.parse(stockData2);
@@ -308,7 +308,7 @@ public class PowerStockController {
 		   {		   
 				   JSONParser parser = new JSONParser();
 				    
-				   	String UserUrl = "https://rajj.herokuapp.com/users/" + username + "/portfolio";	
+				   	String UserUrl = "https://localhost:7070/users/" + username + "/index";	
 					String stockData = Stock.sendGet(UserUrl);
 					JSONObject json = (JSONObject) parser.parse(stockData);
 		
@@ -363,5 +363,4 @@ public class PowerStockController {
 
 		   }
 }
-   
-
+  
