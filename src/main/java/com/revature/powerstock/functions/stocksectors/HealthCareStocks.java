@@ -31,7 +31,7 @@ public class HealthCareStocks {
 					JSONParser stockParser = new JSONParser();
 				
 				// URL
-					String techURL = "package com.revature.powerstock.functions.stocksectors;
+					String techURL = "package com.revature.powerstock.functions.stocksectors";
 
 import java.util.ArrayList;
 import java.util.HashMap;
