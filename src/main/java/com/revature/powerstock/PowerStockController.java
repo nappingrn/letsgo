@@ -104,6 +104,13 @@ public class PowerStockController {
 	   return stockMovement;
 	   
    }
+	
+	
+   @GetMapping("/factsAboutKevin")
+  	public String facts() throws Exception
+  	{
+	   return "he suxs lmao";
+  	}
    
    // Get The Daily High For A Stock
    @SuppressWarnings("unchecked")
